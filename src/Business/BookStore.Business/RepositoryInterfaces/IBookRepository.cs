@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using BookStore.Business.Entities;
+﻿using BookStore.Business.Entities;
 
 namespace BookStore.Business.RepositoryInterfaces
 {
