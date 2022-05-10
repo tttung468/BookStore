@@ -9,13 +9,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{0D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{4832BE20-F391-4D8B-9FD8-7A8086DA6762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Business", "Business\BookStore.Business\BookStore.Business.csproj", "{948AC050-C18F-4705-8653-131F9C319303}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Business", "Business\BookStore.Business\BookStore.Business.csproj", "{948AC050-C18F-4705-8653-131F9C319303}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Client", "Client\BookStore.Client\BookStore.Client.csproj", "{61015D0C-5924-42C3-B681-8DE9E6E4BFB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Client", "Client\BookStore.Client\BookStore.Client.csproj", "{61015D0C-5924-42C3-B681-8DE9E6E4BFB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.WebApi.Client", "Client\BookStore.WebApi.Client\BookStore.WebApi.Client.csproj", "{B81F13BA-E33E-4F10-A7FB-F6C1FEABA8AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.WebApi.Client", "Client\BookStore.WebApi.Client\BookStore.WebApi.Client.csproj", "{B81F13BA-E33E-4F10-A7FB-F6C1FEABA8AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.WebApi.Server", "Server\BookStore.WebApi.Server\BookStore.WebApi.Server.csproj", "{727D71AC-0C6A-4CDB-9603-4FE93CF8D8E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.WebApi.Server", "Server\BookStore.WebApi.Server\BookStore.WebApi.Server.csproj", "{727D71AC-0C6A-4CDB-9603-4FE93CF8D8E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5A76EFD1-8446-40CB-902A-C8BA76E372F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Common", "Common\BookStore.Common\BookStore.Common.csproj", "{B7718D01-96C2-4FBD-B514-20EDAD4BA002}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A244A124-FD38-4AD2-A699-A31752A450B5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Console", "Client\BookStore.Console\BookStore.Console.csproj", "{F28FB644-C49A-4C0B-BEFC-8A6C86DB7FE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +50,14 @@ Global
 		{727D71AC-0C6A-4CDB-9603-4FE93CF8D8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{727D71AC-0C6A-4CDB-9603-4FE93CF8D8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{727D71AC-0C6A-4CDB-9603-4FE93CF8D8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7718D01-96C2-4FBD-B514-20EDAD4BA002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7718D01-96C2-4FBD-B514-20EDAD4BA002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7718D01-96C2-4FBD-B514-20EDAD4BA002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7718D01-96C2-4FBD-B514-20EDAD4BA002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28FB644-C49A-4C0B-BEFC-8A6C86DB7FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28FB644-C49A-4C0B-BEFC-8A6C86DB7FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28FB644-C49A-4C0B-BEFC-8A6C86DB7FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28FB644-C49A-4C0B-BEFC-8A6C86DB7FE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +67,8 @@ Global
 		{61015D0C-5924-42C3-B681-8DE9E6E4BFB3} = {4832BE20-F391-4D8B-9FD8-7A8086DA6762}
 		{B81F13BA-E33E-4F10-A7FB-F6C1FEABA8AE} = {4832BE20-F391-4D8B-9FD8-7A8086DA6762}
 		{727D71AC-0C6A-4CDB-9603-4FE93CF8D8E5} = {7901DFF5-229C-44DD-8B48-C75B97F7B1CA}
+		{B7718D01-96C2-4FBD-B514-20EDAD4BA002} = {5A76EFD1-8446-40CB-902A-C8BA76E372F4}
+		{F28FB644-C49A-4C0B-BEFC-8A6C86DB7FE1} = {4832BE20-F391-4D8B-9FD8-7A8086DA6762}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86CA6556-B1AB-44F9-8256-699B373E262C}

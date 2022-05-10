@@ -1,6 +1,4 @@
-using System;
-
-namespace BookStore.WebApi.Server
+﻿namespace BookStore.Business.Entities
 {
     public class WeatherForecast
     {
