@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using BookStore.Business.Models;
-using System.Threading.Tasks;
+﻿using BookStore.Business.Models;
 
 namespace BookStore.Business.ServiceInterfaces
 {
