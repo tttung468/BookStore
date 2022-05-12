@@ -21,13 +21,14 @@ namespace BookStore.WebApi.Client
     using System = global::System;
 
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.15.10.0 (NJsonSchema v10.6.10.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class WeatherForecastClient : WebApiClientBase
+    public partial class WeatherForecastWebApiClient : WebApiClientBase
     {
-        private string _baseUrl = "";
+        private System.Net.Http.HttpClient _httpClient;
         private System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings;
 
-        public WeatherForecastClient(WebApiClientConfiguration configuration) : base(configuration)
+        public WeatherForecastWebApiClient(WebApiClientConfiguration configuration, System.Net.Http.HttpClient httpClient) : base(configuration)
         {
+            _httpClient = httpClient;
             _settings = new System.Lazy<Newtonsoft.Json.JsonSerializerSettings>(CreateSerializerSettings);
         }
 
@@ -36,12 +37,6 @@ namespace BookStore.WebApi.Client
             var settings = ApplyCommonJsonSerializerSettings(new Newtonsoft.Json.JsonSerializerSettings {  });
             UpdateJsonSerializerSettings(settings);
             return settings;
-        }
-
-        public string BaseUrl
-        {
-            get { return _baseUrl; }
-            set { _baseUrl = value; }
         }
 
         protected Newtonsoft.Json.JsonSerializerSettings JsonSerializerSettings { get { return _settings.Value; } }
@@ -63,10 +58,10 @@ namespace BookStore.WebApi.Client
         public virtual async System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<WeatherForecast>> GetAsync(System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/WeatherForecast");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/WeatherForecast");
 
-            var client_ = new System.Net.Http.HttpClient();
-            var disposeClient_ = true;
+            var client_ = _httpClient;
+            var disposeClient_ = false;
             try
             {
                 using (var request_ = new System.Net.Http.HttpRequestMessage())

@@ -59,7 +59,7 @@
       "generateClientClasses": true,
       "generateClientInterfaces": false,
       "generateDtoTypes": false,
-      "injectHttpClient": false,
+      "injectHttpClient": true,
       "disposeHttpClient": true,
       "protectedMethods": [],
       "generateExceptionClasses": false,
@@ -128,7 +128,7 @@
       "enumNameGeneratorType": null,
       "serviceHost": null,
       "serviceSchemes": null,
-      "output": "../../Client/BookStore.WebApi.Client/WebApiClient.generated.cs"
+      "output": "../../Client/BookStore.WebApi.Client/WebApiClients.generated.cs"
     }
   }
 }
