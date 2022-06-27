@@ -11,8 +11,8 @@
       "assemblyPaths": [ "bin/$(Configuration)/net6.0/BookStore.WebApi.Server.dll" ],
       "contractResolverType": null,
       "controllerNames": [
-        "BookStore.WebApi.Server.Controllers.WeatherForecastController",
-        "BookStore.WebApi.Server.Controllers.ValuesController"
+        "BookStore.WebApi.Server.Controllers.WeatherForecastController"
+        //"BookStore.WebApi.Server.Controllers.ValuesController"
       ],
       "createWebHostBuilderMethod": null,
       "defaultDictionaryValueReferenceTypeNullHandling": "NotNull",

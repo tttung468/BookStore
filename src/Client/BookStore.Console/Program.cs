@@ -22,7 +22,7 @@ var host = new HostBuilder()
     .Build();
 
 var client = host.Services.GetRequiredService<IWeatherForecastWebApiClient>();
-var res = await client.GetAsync();
+var res = await client.GetWeatherForecastAsync();
 foreach (var weatherForecast in res)
 {
     Console.WriteLine(weatherForecast.Summary);
